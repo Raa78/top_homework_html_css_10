@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Домашнее задание#10. Сделать раздел из 6 анимированных квадратов новостей с адаптивностью.">
+  <meta name="description"
+    content="Домашнее задание#10. Сделать раздел из 6 анимированных квадратов новостей с адаптивностью.">
   <title>Flexbox</title>
 
   <link rel="icon" href="icon/favicon.ico">
@@ -61,91 +62,53 @@
       <div class="articles__wrap"> <!-- START "articles__wrap" -->
 
         <div class="articles__column-left">
-          <div class="article__card-1">
-            <div class="article__card-content">
-              <a href="#">
-                <img src="images/post-01.jpg" alt="Картинка для категори">
+
+          <div class="article__card-content card-1">
+            <img src="images/1.jpg" alt="Картинка для категори">
+
+            <div class="card-content__info">
+              <a class="card-content__info_category font_category" href="#">
+                Fashion
               </a>
-              <div class="card-content__info">
-                <a class="card-content__info_category" href="#">
-                  Business
+              <h3 class="card-content__info_headline">
+                <a class="font_headline" href="#">
+                  How to Style a Choker so you Don’t look Like every other girl on the planet
                 </a>
-                <h3 class="card-content__info_headline">
-                  <a href="#">
-                    Microsoft quisque at ipsum vel orci eleifend ultrices
+              </h3>
+              <span class="card-content__info_metadata font_metadata">
+                <span>By</span>
+                <span class="metadata_author">
+                  <a href="#>
+                    Jawn Staff
                   </a>
-                </h3>
-                <span class="card-content__info_metadata">
-                  <span class="metadata_author">Jack Sims</span>
-                  <span class="metadata_date">Feb 16</span>
                 </span>
-              </div>
+                <span class="metadata_date">
+                  <a href="#">
+                    Nov 10, 2018
+                  </a>
+                </span>
+              </span>
             </div>
-          </div> <!-- END "article__card-1" -->
+          </div> <!-- END "article__card-content card-1" -->
+
+          <div class="articles__column-left__bottom-wrap">
+
+          </div>
+
+
+
+
+
         </div> <!-- END content__column-left -->
 
         <div class="articles__column-right">
-          <div class="article__card-2">
-            <div class="article__card-content">
-              <a href="#">
-                <img src="images/post-02.jpg" alt="Картинка для категории">
-              </a>
-              <div class="card-content__info">
-                <a class="card-content__info_category" href="#">
-                  Culture
-                </a>
-                <h3 class="card-content__info_headline">
-                  <a href="#">
-                    London ipsum dolor sit amet, consectetur adipiscing elit.
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div> <!-- END "article__card-2" -->
 
-          <div class="article__card-3">
-            <div class="article__card-content">
-              <a href="">
-                <img src="images/post-03.jpg" alt="Картинка для категории">
-              </a>
-              <div class="card-content__info">
-                <a class="card-content__info_category" href="#">
-                  Life Style
-                </a>
-                <h3 class="card-content__info_headline">
-                  <a href="#">
-                    Pellentesque dui nibh, pellen-tesque ut dapibus ut
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div> <!-- END "article__card-3" -->
-
-          <div class="article__card-4">
-            <div class="article__card-content">
-              <a href="">
-                <img src="images/post-04.jpg" alt="Картинка для категории">
-              </a>
-              <div class="card-content__info">
-                <a class="card-content__info_category" href="#">
-                  Sport
-                </a>
-                <h3 class="card-content__info_headline">
-                  <a href="#">
-                    Motobike Vestibulum vene-natis purus nec nibh volutpat
-                  </a>
-                </h3>
-              </div>
-            </div>
-          </div> <!-- END "article__card-4" -->
         </div> <!-- END content__column-right -->
 
       </div> <!-- END "articles__wrap" -->
 
     </div> <!-- END "container" -->
   </section>
-
-
 
 </body>
 
