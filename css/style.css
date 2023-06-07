@@ -46,7 +46,7 @@ Mutual Styles
 */
 
 body {
-	background-image: url(../images/background_1_.jpg);
+	background-image: url(../images/background_1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -120,6 +120,13 @@ Style for  <main>
 .articles__column-left__bottom {
 	display: flex;
 }
+
+/* .articles__column-left__bottom .article__card-2,
+.articles__column-left__bottom .article__card-3 {
+	flex-basis: 50%;
+} */
+
+
 
 .articles__column-right {
 	flex-basis: 33.333333%;
