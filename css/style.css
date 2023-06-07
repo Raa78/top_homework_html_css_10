@@ -121,10 +121,16 @@ Style for  <main>
 	display: flex;
 }
 
-/* .articles__column-left__bottom .article__card-2,
+.articles__column-left__bottom .article__card-2 {
+	flex-basis: 50%;
+	padding-right: 7px;
+}
+
 .articles__column-left__bottom .article__card-3 {
 	flex-basis: 50%;
-} */
+	padding-left: 7px;
+
+}
 
 
 
