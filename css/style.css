@@ -46,7 +46,7 @@ Mutual Styles
 */
 
 body {
-	background-image: url(../images/background_1.jpg);
+	background-image: url(../images/background_1_.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
@@ -54,15 +54,15 @@ body {
 }
 
 .container {
-	width: 1140px;
-	width: 1155px;
+	max-width: 1155px;
+	/* width: 100%; */
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
 
 /*
-Style for <aside> - шапка
+Style for "aside"
 */
 
 .aside {
@@ -100,7 +100,7 @@ Style for <aside> - шапка
 
 
 /*
-Style for  <main>
+Style for "articles"
 */
 
 .articles {
@@ -132,13 +132,10 @@ Style for  <main>
 
 }
 
-
-
 .articles__column-right {
 	flex-basis: 33.333333%;
 	padding: 0 7px;
 }
-
 
 .article__card-content {
 	position: relative;
@@ -166,7 +163,6 @@ Style for  <main>
 .article__card-content:hover::after {
 	background: rgba(0,0,0,.4);
 }
-
 
 .article__card-content img {
 	width: 100%;
@@ -329,4 +325,33 @@ transform: scale(1.15) rotate(-2deg);
   font-weight: 400;
   line-height: 1.7;
   color: #fff;
+}
+
+
+/*
+Style for "@media"
+*/
+
+@media(max-width: 1200px) {
+	.container {
+			max-width: 1140px
+	}
+}
+
+@media (max-width: 992px)  {
+	.container {
+			max-width: 960px
+	}
+}
+
+@media(max-width: 768px) {
+	.container {
+			max-width:720px
+	}
+}
+
+@media(max-width: 576px) {
+	.container {
+			max-width:540px
+	}
 }
