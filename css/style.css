@@ -11,29 +11,29 @@ Clearing all rules and styles
 */
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 table {
@@ -390,11 +390,19 @@ Style for "@media"
 		flex-wrap: wrap;
 	}
 	.articles__column-left {
-		flex-basis: 49.865%;
+		flex-basis: 50%;
 	}
 	.articles__column-right {
 		flex-basis: 50%;
 	}
+
+	.article__card-1 {
+		height: 31.505%;
+		/* "костыль" для компенсации кривых пропорций 1-ой картинки.
+		В образце, на данном брейкпоинте, картинки стоят немного криво
+		относительно друг друга. Я решил поправить этот косяк :))) */
+	}
+
 	.articles__column-left__bottom .article__card-2,
 	.articles__column-left__bottom .article__card-3 {
 		flex-basis: 100%;
