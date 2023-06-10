@@ -11,13 +11,13 @@ Clearing all rules and styles
 */
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 * {
@@ -45,6 +45,13 @@ table {
 Mutual Styles
 */
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+
 .container {
 	/* max-width: 1140px; */
 	width: 100%;
@@ -57,27 +64,47 @@ Mutual Styles
 Style for "aside"
 */
 
-.aside {
+.subject {
 	background: rgb(195, 224, 249);
-	padding: 10px 10px;
 }
 
-.aside__task {
+.subject__task {
+	display: flex;
+
 	overflow: hidden;
-	padding-left: 7px;
-	padding-right: 7px;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
-.aside__task img {
-	float: left;
+.subject__task img {
 	width: 100px;
 	height: 100px;
+
+	padding-left: 7px;
+	padding-right: 7px;
+
 	background: #fff;
 }
 
-.aside__task table {
-	float: left;
-	margin-left: 10px;
+.subject__task img.logo-mob {
+	display: none;
+
+	width: 100px;
+	height: auto;
+
+	padding-left: 7px;
+	padding-right: 7px;
+
+	background: #fff;
+}
+
+
+
+.subject__task table {
+	display: block;
+	padding-left: 7px;
+	padding-right: 7px;
 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
@@ -86,10 +113,15 @@ Style for "aside"
 	color: #000;
 }
 
-.aside__task td {
+.subject__task table h2 {
+	font-size: 1.5em;
+}
+
+.subject__task td {
+	font-size: 1em;
 	vertical-align: sub;
 	text-align: justify;
-	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -103,9 +135,9 @@ Style for "articles"
 	background-size: cover;
 	background-position: top;
 
-
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 20px;
+	/* padding-bottom: 25px; */
+	flex-grow: 1;
 }
 
 .articles__wrap {
@@ -277,7 +309,6 @@ transform: scale(1.15) rotate(-2deg);
 	letter-spacing: 0;
 }
 
-
 .font_headline_middle {
 	font-family: Barlow Condensed,sans-serif;
 	font-weight: 700;
@@ -316,7 +347,6 @@ transform: scale(1.15) rotate(-2deg);
 	color: #c72026;
 }
 
-
 .card-content__info_metadata .metadata_date::before {
 	content: "-";
 	margin-right: 3px;
@@ -343,14 +373,24 @@ Style for "@media"
 	.container {
 			max-width: 960px
 	}
+	.subject__task img {
+		width: 80px;
+		height: 80px;
+	}
+	.subject__task table {
+		font-size: 15px;
+	}
 }
 
 @media(max-width: 990px) {
 	.container {
 			max-width: 720px
 	}
+	.subject__task {
+		flex-wrap: wrap;
+	}
 	.articles__column-left {
-		flex-basis: 50%;
+		flex-basis: 49.865%;
 	}
 	.articles__column-right {
 		flex-basis: 50%;
@@ -371,7 +411,6 @@ Style for "@media"
 		font-size: 25px;
 		line-height: 28px;
 	}
-
 	.info_align-big .card-content__info_headline {
 		margin: 14px 0 13px;
 	}
@@ -381,19 +420,38 @@ Style for "@media"
 	.container {
 			max-width: 540px
 	}
+	.subject__task img {
+		display: none;
+	}
+
+	.subject__task img.logo-mob {
+		display: inline;
+	}
+
 	.articles__wrap {
 		flex-wrap: wrap;
 	}
+
 	.articles__column-left {
 		flex-basis: 100%;
 	}
+
 	.articles__column-right {
 		flex-basis: 100%;
 	}
+
 	.articles__column-left__bottom .article__card-2,
 	.articles__column-left__bottom .article__card-3 {
 		flex-basis: 100%;
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.info_align-big,
+	.info_align-middle {
+		left: 15px;
+		bottom: 15px;
+
+		padding-right: 15px;
 	}
 }
