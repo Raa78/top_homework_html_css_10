@@ -37,7 +37,7 @@ ul {
 }
 
 table {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 
@@ -46,17 +46,16 @@ Mutual Styles
 */
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 
 .container {
-	/* max-width: 1140px; */
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 15px;
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 15px;
 }
 
 
