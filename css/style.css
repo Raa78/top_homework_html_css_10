@@ -383,6 +383,12 @@ Style for "@media"
   .container {
     max-width: 720px
   }
+  .subject__task img {
+    display: none;
+  }
+  .subject__task img.logo-mob {
+    display: block;
+  }
   .subject__task {
     flex-wrap: wrap;
   }
@@ -429,12 +435,6 @@ Style for "@media"
 @media(max-width: 770px) {
   .container {
     max-width: 540px
-  }
-  .subject__task img {
-    display: none;
-  }
-  .subject__task img.logo-mob {
-    display: inline;
   }
   .articles__wrap {
     flex-wrap: wrap;
